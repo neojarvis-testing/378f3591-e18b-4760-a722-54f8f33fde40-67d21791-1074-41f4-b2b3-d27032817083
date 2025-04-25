@@ -197,10 +197,20 @@ public class NykaaGetAppPage {
             Assert.assertTrue(deliveryQues.contains(value));
             test.log(Status.PASS, "Verified 'Privacy Policy'");
             LoggerHandler.info("Verified 'Privacy Policy'");
+            Thread.sleep(4000);
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
-        }
+            try {
+                Thread.sleep(4000);
+            } catch (InterruptedException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+        } catch (InterruptedException e) {
+                    // TODO Auto-generated catch block
+                    e.printStackTrace();
+                }
     }
 
     /**

@@ -2,6 +2,8 @@ package stepdefinitions;
 
 
 
+import java.io.IOException;
+
 import com.aventstack.extentreports.ExtentReports;
 
 import io.cucumber.java.After;
@@ -10,6 +12,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.BeforeAll;
 import utils.Base;
 import utils.Report;
+import utils.SendEmailWithAttachment;
 
 public class Hooks extends Base{
     static ExtentReports reports;
@@ -71,5 +74,11 @@ public class Hooks extends Base{
     @AfterAll
     public static void generateReport(){
         reports.flush();
+        try {
+            SendEmailWithAttachment.sendEmailWithAttachment("likithareddy177@gmail.com", "likithareddy177@gmail.com", "BDD_Report", "Hey Hi");
+        } catch (IOException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
     }
 }

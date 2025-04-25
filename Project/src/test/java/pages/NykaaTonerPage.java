@@ -311,30 +311,4 @@ public class NykaaTonerPage {
             LoggerHandler.info("Cannot be Clicked on ReadMore");
         }
     }
-
-    /*
-     * a. Method Name: testTonerPage
-     * b. Author:Likitha
-     * c. Description:
-     * -This method automates the flow of searching for a toner product, filtering
-     * results,
-     * selecting a product, and verifying key details before adding it to the
-     * shopping bag.
-     * d.Parameters:None
-     * e. return type : void
-     */
-    public void testTonerPage(String value) {
-        sendTonerInSearchBar(value);
-        performEnter();
-        clickOnSortBy();
-        selectNewArrivals();
-        clickOnAvgCustomer();
-        selectRating();
-        clickOnFirstProduct();
-        clickOnAddToBag();
-        verifyDescriptionText(value);
-        clickOnIngredients();
-        clickOnReadMore();
-    }
-
 }

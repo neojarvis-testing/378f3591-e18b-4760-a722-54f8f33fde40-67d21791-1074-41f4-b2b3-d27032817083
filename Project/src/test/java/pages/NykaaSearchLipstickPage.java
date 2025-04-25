@@ -290,29 +290,6 @@ public class NykaaSearchLipstickPage {
             LoggerHandler.info("Failed to verify was this helpful?.");
         }
     }
-    public void testNykaaLipsticks(String value){
-        
-        try {
-            sendLipstickInsearchBar(value);
-            clickOnLiquidLipstickSuggestion();
-            hoverOnFirstProduct();
-            clickOnPriviewShades();
-            verifySelectAShade(value);
-            clickOnViewDetails();
-            clickOnArrow();
-            selectThirdOption();
-            scrollToFooter();
-            clickOnContactUs();
-            verifyBrowseTopics(value);
-            clickOnNykaaAccount();
-            clickOnMyWishlist();
-            clickAddItems();
-            verifyWasHelpful(value);
-        } catch (Exception e) {
-            LoggerHandler.error(e.getMessage());
-        }
-        
-    }
 
 }
 

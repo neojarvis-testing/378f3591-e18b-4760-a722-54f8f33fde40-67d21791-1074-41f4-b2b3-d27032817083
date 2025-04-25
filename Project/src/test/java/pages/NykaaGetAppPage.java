@@ -214,6 +214,7 @@ public class NykaaGetAppPage {
     public void clickOnOfferZone() {
         try {
             try {
+                Thread.sleep(4000);
                helper.doJsScrollFooter();
                 helper.doClickandswitch(NykaaGetAppPageLocators.offerZone);
                 test.log(Status.INFO, "Clicked and switched tab to Offer Zone");
@@ -246,27 +247,5 @@ public class NykaaGetAppPage {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
         }
-    }
-
-    /*
-     * A. Method Name: execute
-     * B. Author name: Tanu Shree Das
-     * C. Description: Executes all defined steps in sequence for verifying the
-     * Nykaa Get App page functionality.
-     * D. Parameters: None
-     * E. Return Type: void
-     */
-    public void execute(String value) {
-        clickOnGetApp();
-        verifyBeautyToGo(value);
-        enterMobileNumberData(value);
-        clickOnTermsConditions();
-        verifyTermsConditions(value);
-        clickOnShippingPolicy();
-        verifyDeliveryProcessQues(value);
-        clickOnPrivacyPolicy();
-        verifyPrivacyPolicy(value);
-        clickOnOfferZone();
-        verifyURL(value);
     }
 }

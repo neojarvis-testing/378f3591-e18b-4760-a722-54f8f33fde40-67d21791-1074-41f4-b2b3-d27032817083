@@ -21,7 +21,7 @@ public class NykaaLuxePageDefinitions {
     {
         luxe.clickOnLuxe();
     }
-    @When("I verify the text {string}")
+    @When("I verify the text Luxe {string}")
     public void i_verify_the_text_luxe(String string)
     {
         luxe.verifyLuxe(string);
@@ -75,8 +75,8 @@ public class NykaaLuxePageDefinitions {
     {
         luxe.clickOnGroomingAdvice();
     }
-    @Then("I verify the text {string}")
-    public void i_verify_the_text_shaving(String string) 
+    @Then("I verifies elements text Shaving {string}")
+    public void i_verifies_elements_text_shaving(String string) 
     {
         luxe.verifyShaving(string);
     }

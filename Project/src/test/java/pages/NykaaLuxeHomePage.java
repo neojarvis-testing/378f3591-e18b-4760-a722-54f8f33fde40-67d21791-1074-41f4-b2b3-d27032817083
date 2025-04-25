@@ -19,7 +19,7 @@ public class NykaaLuxeHomePage {
     this.test=test;
    } 
     /*
-	 * a.Method Name: scrollToFotter
+	 * a.Method Name: scrollToFooter
 	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method scrolls the page to the footer section .
 	 * d.Parameter:None
@@ -219,7 +219,7 @@ public class NykaaLuxeHomePage {
     }
    }
     /*
-	 * a.Method Name: scrollToFotterAgain
+	 * a.Method Name: scrollToFooterAgain
 	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method scrolls the page to the footer section .
 	 * d.Parameter:None

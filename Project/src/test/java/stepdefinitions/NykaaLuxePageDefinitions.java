@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pages.NykaaLuxeHomePage;
 
 public class NykaaLuxePageDefinitions {
-    public ExtentTest test = Hooks.reports.createTest("Nykaa Luxe Page Test Case");
+    ExtentTest test = Hooks.reports.createTest("Nykaa Luxe Page Test Case");
     NykaaLuxeHomePage luxe = new NykaaLuxeHomePage(test);    
     
     @Given("I scroll to Nykaa Luxe Footer Section")

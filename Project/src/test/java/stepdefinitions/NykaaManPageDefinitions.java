@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pages.NykaaManPage;
 
 public class NykaaManPageDefinitions {
-    public ExtentTest test = Hooks.reports.createTest("Nykaa Man Page Test Case");
+    ExtentTest test = Hooks.reports.createTest("Nykaa Man Page Test Case");
     NykaaManPage man = new NykaaManPage(test);  
 
     @Given("I clicks on Nykaa Man")

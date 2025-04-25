@@ -8,7 +8,7 @@ import io.cucumber.java.en.When;
 import pages.NykaaCategoriesPage;
 
 public class NykaaCategoriesPageDefinitions {
-    public ExtentTest test = Hooks.reports.createTest("Nykaa Categories Page Test Case");
+    ExtentTest test = Hooks.reports.createTest("Nykaa Categories Page Test Case");
     NykaaCategoriesPage category = new NykaaCategoriesPage(test);
     
     @Given("I verify that I'm in {string} Page")

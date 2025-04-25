@@ -66,11 +66,11 @@ public class NykaaNewLaunches {
      * d.Parameters:None
      * e.Return Type:void
      */
-    public void verifyShopNewLaunches(){
+    public void verifyShopNewLaunches(String value){
         try {
             helper.dowaitForElementToBeVisible(NykaaNewLaunchesLocators.shopNewLaunches, 10);
             String data = helper.doGetText(NykaaNewLaunchesLocators.shopNewLaunches);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder,sheetOfNewLaunches,7,0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.INFO,"New launches verified");
             LoggerHandler.info("New launches verified");
         }catch (Exception e) {
@@ -103,12 +103,12 @@ public class NykaaNewLaunches {
      * d.Parameters:None
      * e.Return Type:void
      */
-    public void clickFaceWah(){
+    public void clickFaceWah(String value){
         try {
             helper.dowaitForElementToBeVisible(NykaaNewLaunchesLocators.faceWash, 10);
             helper.doClickandswitch(NykaaNewLaunchesLocators.faceWash);
             String data= helper.doGetText(NykaaNewLaunchesLocators.natural);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder,sheetOfNewLaunches,12,0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.INFO,"clicked on facewash");
             LoggerHandler.info("clicked on facewash");
         } catch (Exception e) {
@@ -123,12 +123,12 @@ public class NykaaNewLaunches {
      * d.Parameters:None
      * e.Return Type:void
      */
-    public void verifyFaceWash(){
+    public void verifyFaceWash(String value){
         try {
             Base.driver.navigate().refresh();
             helper.dowaitForElementToBeVisible(NykaaNewLaunchesLocators.facewashHeading, 10);
             String data = helper.doGetText(NykaaNewLaunchesLocators.facewashHeading);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder,sheetOfNewLaunches,8,0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.PASS,"Face wash verified");
             LoggerHandler.info("Face wash verified");
         } catch (Exception e) {
@@ -161,14 +161,15 @@ public class NykaaNewLaunches {
      * d.Parameters:None
      * e.Return Type:void
      */
-    public void clickPriceRange(){
+    public void clickPriceRange(String value){
         try {
             helper.dowaitForElementToBeVisible(NykaaNewLaunchesLocators.priceRange, 10);
             helper.doClick(NykaaNewLaunchesLocators.priceRange);
             String data= helper.doGetText(NykaaNewLaunchesLocators.price);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder,sheetOfNewLaunches,13,0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.PASS,"clicked on Price range");
             LoggerHandler.info("clicked on Price range");
+            Thread.sleep(4000);
         } catch (Exception e) {
             test.log(Status.FAIL, "Price range not selected");
             LoggerHandler.error("Price range not selected");
@@ -289,13 +290,13 @@ public class NykaaNewLaunches {
      * d.Parameters:None
      * e.Return Type:void
      */
-    public void verifyBag(){
+    public void verifyBag(String value){
         try {
             helper.doSwitchToIframe(NykaaNewLaunchesLocators.iframe);
             helper.dowaitForElementToBeVisible(NykaaNewLaunchesLocators.bag, 10);
             String data = helper.doGetText(NykaaNewLaunchesLocators.bag);
             System.out.println(data);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty("user.dir")+"/testdata/SearchData.xlsx", sheetOfNewLaunches, 9, 0)));
+            Assert.assertTrue(data.contains(value));
             Screenshot.captureFullScreenshot("NykaaNewLaunches_Screenshot");
             LoggerHandler.info("Bag verified");
             test.log(Status.INFO, "Bag verified");

@@ -11,7 +11,8 @@ public class NykaaNewLaunchesLocators {
     public static final By facewashHeading = By.cssSelector("h1[class='css-c0pzm0']");
     public static final By price = By.xpath("(//div[@class='filter-open css-1gdff5r'])[2]");
     public static final By priceRange = By.cssSelector("label[for='checkbox_Rs. 1000 - Rs. 1999_1000-1999']");
-    public static final By firstProduct = By.xpath("(//div[@class='css-1rd7vky'])[1]");
+    // public static final By firstProduct = By.xpath("(//div[@class='css-1rd7vky'])[1]");
+    public static final By firstProduct = By.xpath("(//a[@class='css-qlopj4'])[1]");
     public static final By delivery = By.cssSelector("input[name='pin code']");
     public static final By check = By.cssSelector("button[class='css-1ivth7r']");
     public static final By addtoBag = By.xpath("(//button[@class=' css-13zjqg6'])[1]");

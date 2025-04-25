@@ -90,11 +90,11 @@ public class NykaaPillowPage {
      * D. Parameter: None
      * E. Return type: void
      */
-    public void verifyPillow(){
+    public void verifyPillow(String value){
         try {
             helper.dowaitForElementToBeVisible(NykaaPillowLocators.pillowHeading, 10);
             String data = helper.doGetText(NykaaPillowLocators.pillowHeading);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder, sheetOfPillowPage, 10, 0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.INFO, "Text pillow verified");
             LoggerHandler.info("Text pillow verified");
         } catch (Exception e) {
@@ -224,11 +224,11 @@ public class NykaaPillowPage {
     * D. Parameter: None
     * E. Return type: void
     */
-    public void verifyFilter(){
+    public void verifyFilter(String value){
         try {
             helper.dowaitForElementToBeVisible(NykaaPillowLocators.filtersApplied, 10);
             String data = helper.doGetText(NykaaPillowLocators.filtersApplied);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder, sheetOfPillowPage, 11, 0)));
+            Assert.assertTrue(data.contains(value));
             test.log(Status.INFO, "Filter text verified");
             LoggerHandler.info("Filter text verified");
         }catch (Exception e) {
@@ -301,12 +301,12 @@ public class NykaaPillowPage {
     * D. Parameter: None
     * E. Return type: void
     */
-    public void verifyBag(){
+    public void verifyBag(String value){
         try {
             helper.doSwitchToIframe(NykaaPillowLocators.iframe);
             helper.dowaitForElementToBeVisible(NykaaPillowLocators.bag, 10);
             String data = helper.doGetText(NykaaPillowLocators.bag);
-            Assert.assertTrue(data.contains(ExcelReader.readdata(System.getProperty(userDirectory)+testdataFolder, sheetOfPillowPage, 9, 0)));
+            Assert.assertTrue(data.contains(value));
             Screenshot.captureFullScreenshot("Verify_Bag");
             Report.addScreenshotToReport("nykaa",test,Base.driver,"screenshot");
             LoggerHandler.info("Text bag verified");

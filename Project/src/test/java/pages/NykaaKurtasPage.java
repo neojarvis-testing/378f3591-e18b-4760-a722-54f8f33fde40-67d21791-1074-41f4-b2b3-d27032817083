@@ -218,8 +218,8 @@ public class NykaaKurtasPage {
     */
     public void clickReadAllReviews(){
         try {
-            helper.doScrollBypixel(0, 500);
-            helper.doScrollBypixel(0, 500);
+            helper.doJsscrollIntoView(NykaaKurtasLocators.readAllReviews);
+            helper.doScrollBypixel(0, 1000);
             helper.dowaitForElementToBeVisible(NykaaKurtasLocators.readAllReviews, 10);
             helper.doJsCLick(NykaaKurtasLocators.readAllReviews);
             test.log(Status.PASS, "Clicked on Read all reviews");

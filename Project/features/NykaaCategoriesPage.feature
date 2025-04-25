@@ -1,7 +1,7 @@
 Feature: Nykaa Categories Page Functionalities
 
   Scenario: Execute All Functionalities
-    Given I verify that I'm in "CATEGORIES" Page
+    Given I verify that I'm in "Categories" Page
     When I clicks on search bar, sends data "Kajal"
     And I verify the text containing "Kajal"
     And I click on Formulation and clicks on the Pencil

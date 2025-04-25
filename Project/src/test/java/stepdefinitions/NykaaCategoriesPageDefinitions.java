@@ -1,4 +1,4 @@
-package stepdefintions;
+package stepdefinitions;
 
 import com.aventstack.extentreports.ExtentTest;
 

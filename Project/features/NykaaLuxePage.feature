@@ -3,7 +3,7 @@ Feature: Nykaa Luxe Home Page Functionalities
   Scenario: Execute Nykaa Luxe Page Workflow
     Given I scroll to Nykaa Luxe Footer Section
     When I click on Luxe 
-    And I verify the text "Luxe"
+    And I verify the text Luxe "Luxe"
     And I click on Sort by Popularity
     And I click on Customer Top Rated
     And I click on Gender
@@ -14,4 +14,4 @@ Feature: Nykaa Luxe Home Page Functionalities
     And I scroll to the footer again
     And I click on Nykaa Man
     And I click on Grooming Advice
-    Then I verify the text "Shaving and Beard"
+    Then I verify the text Shaving "Shaving and Beard"

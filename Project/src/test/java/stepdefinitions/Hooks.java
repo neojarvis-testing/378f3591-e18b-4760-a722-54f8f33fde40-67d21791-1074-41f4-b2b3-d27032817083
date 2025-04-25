@@ -21,6 +21,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
     @BeforeAll
     public static void report(){
         reports = Report.generateExtenteReports("NYKAA_Report");
@@ -33,6 +34,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
     @Before
     public void open(){
         openBrowser();
@@ -45,6 +47,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
     @After
     public void close(){
         driver.quit();
@@ -57,6 +60,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
     @AfterAll
     public static void generateReport(){
         reports.flush();

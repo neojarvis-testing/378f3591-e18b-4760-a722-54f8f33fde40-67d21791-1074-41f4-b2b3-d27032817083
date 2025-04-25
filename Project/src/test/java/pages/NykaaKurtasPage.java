@@ -221,7 +221,9 @@ public class NykaaKurtasPage {
             helper.doJsscrollIntoView(NykaaKurtasLocators.readAllReviews);
             helper.doScrollBypixel(0, 1000);
             helper.dowaitForElementToBeVisible(NykaaKurtasLocators.readAllReviews, 10);
-            helper.doJsCLick(NykaaKurtasLocators.readAllReviews);
+            Thread.sleep(3000);
+            helper.doClick(NykaaKurtasLocators.readAllReviews);
+            helper.doClick(NykaaKurtasLocators.readAllReviews);
             test.log(Status.PASS, "Clicked on Read all reviews");
             LoggerHandler.info("Clicked on Read all reviews");
         } catch (Exception e) {

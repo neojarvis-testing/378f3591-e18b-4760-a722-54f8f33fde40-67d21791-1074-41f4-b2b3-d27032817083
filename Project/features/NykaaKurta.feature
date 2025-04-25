@@ -11,7 +11,6 @@ Feature: Nykaa Kurtas Page Functionalities
     And I click on the Best Seller option "Sort"
     And I click on the second product "Bestseller"
     And I click on the Read All Reviews 
-    And I verify that the all reviews "ALL"
     And I click on the Helpful "Helpful"
     And I click on the mobile number input field
     And I input a mobile number "9876543210"

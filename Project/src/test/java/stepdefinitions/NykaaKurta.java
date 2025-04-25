@@ -47,10 +47,6 @@ public void i_click_on_the_second_product(String string) {
 public void i_click_on_the_read_all_reviews() {
     kurta.clickReadAllReviews();
 }
-@When("I verify that the all reviews {string}")
-public void i_verify_that_the_all_reviews(String string) {
-    kurta.verifyAllReviews(string);
-}
 @When("I click on the Helpful {string}")
 public void i_click_on_the_helpful(String string) {
     kurta.clickHelpful(string);

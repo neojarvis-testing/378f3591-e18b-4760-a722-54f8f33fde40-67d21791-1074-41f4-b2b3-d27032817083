@@ -37,13 +37,13 @@ public void i_click_on_the_face_wash_element(String string) {
     launches.clickFaceWah(string);
     launches.verifyFaceWash(string);
 }
-@When("I click on the price filter option of new launches")
+@When("I click on the price option of new launches")
 public void i_click_on_the_price_filter_option_of_new_launches() {
     launches.clickPrices();
 }
-@When("I select a specific price range filter {string}")
-public void i_select_a_specific_price_range_filter(String string) {
-    launches.clickPriceRange(string);
+@When("I select a price range of new launches")
+public void i_select_a_specific_price_range_filter() {
+    launches.clickPriceRange();
 }
 @When("I click on the first product link and switch to its page")
 public void i_click_on_the_first_product_link_and_switch_to_its_page() {

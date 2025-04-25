@@ -5,7 +5,7 @@ import org.openqa.selenium.By;
 public class TonerPageLocator {
     private TonerPageLocator(){}
     public static final By searchBar=By.cssSelector("input[placeholder='Search on Nykaa']");
-    public static final By toner=By.id("title .css-c0pzm0");
+    public static final By toner=By.id("h1[class='css-c0pzm0']");
     public static final By sortBy=By.className("css-1aucgde");
     public static final By newArrivals=By.xpath("//span[text()='new arrivals']");
     public static final By rate=By.xpath("//span[text()='4 stars & above']");

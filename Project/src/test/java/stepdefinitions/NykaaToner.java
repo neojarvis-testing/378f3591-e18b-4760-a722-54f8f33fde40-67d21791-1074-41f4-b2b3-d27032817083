@@ -1,4 +1,4 @@
-package stepdefintions;
+package stepdefinitions;
 
 import com.aventstack.extentreports.ExtentTest;
 
@@ -19,6 +19,7 @@ public class NykaaToner {
     @When("I press the Enter key")
     public void i_press_the_enter_key() {
         tonerPage.performEnter();
+        // tonerPage.verifyToner();
     }
 
     @When("I click on Sort By")

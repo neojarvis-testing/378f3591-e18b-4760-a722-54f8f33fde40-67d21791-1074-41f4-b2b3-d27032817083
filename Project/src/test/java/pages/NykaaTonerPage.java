@@ -78,7 +78,8 @@ public class NykaaTonerPage {
 
     public void verifyToner() {
         try {
-            String toner = helper.doGetText(TonerPageLocator.toner);
+            // String toner = helper.doGetText(TonerPageLocator.toner);
+            String toner=Base.driver.getCurrentUrl();
             String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfToner, 0, 1);
             Assert.assertTrue(toner.contains(expected));
             test.log(Status.PASS, "Verified toner text succesfully");

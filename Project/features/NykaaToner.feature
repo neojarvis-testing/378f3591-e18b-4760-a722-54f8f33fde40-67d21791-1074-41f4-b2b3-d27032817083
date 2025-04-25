@@ -1,6 +1,6 @@
 Feature:Nykaa Toner Page Operations
 Scenario:Perform all actions on the Nykaa Toner Page
-  Given I enter "Toner" in the search bar
+  Given I enter "TONER" in the search bar
   When I press the Enter key
   And I click on Sort By
   And I select New Arrivals

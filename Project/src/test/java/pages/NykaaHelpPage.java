@@ -4,9 +4,9 @@ import org.junit.Assert;
 
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
+
 import uistore.NykaaHelpPageLocator;
 import utils.Base;
-import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Report;
 import utils.Screenshot;
@@ -15,9 +15,6 @@ import utils.WebDriverHelper;
 public class NykaaHelpPage {
     WebDriverHelper helper;
     ExtentTest test;
-    static final String sheetOfHelp = "Likitha";
-    static final String userDirectory="user.dir";
-    static final String testdataFolder="/testdata/TonerExcel.xlsx";
     public NykaaHelpPage(ExtentTest test) {
         helper = new WebDriverHelper(Base.driver);
         this.test = test;
@@ -51,10 +48,10 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void
      */
-    public void verifyHelpPageTitle() {
+    public void verifyHelpPageTitle(String value) {
         try {
             String pageTitle=helper.doGetText(NykaaHelpPageLocator.helpCentre);
-            Assert.assertTrue(pageTitle.contains("Help Center"));
+            Assert.assertTrue(pageTitle.contains(value));
             test.log(Status.PASS, "Verified Help Page Title");
             LoggerHandler.info("Verified Help Page Title");
         } catch (Exception e) {
@@ -91,11 +88,10 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void (Does not return a value)
      */
-    public void verifyOrderRelatedText() {
+    public void verifyOrderRelatedText(String value) {
         try {
             String orderrelated = helper.doGetText(NykaaHelpPageLocator.orderRelatedText);
-            String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfHelp, 3, 0);
-            Assert.assertTrue(orderrelated.contains(expected));
+            Assert.assertTrue(orderrelated.contains(value));
             test.log(Status.PASS, "Verified the text Order Related");
             LoggerHandler.info("Verified the text Order Related");
         } catch (Exception e) {
@@ -133,11 +129,11 @@ public class NykaaHelpPage {
      * e. Return Type: void
      */
 
-    public void verifyOrderStatustext() {
+    public void verifyOrderStatustext(String value) {
         try {
             String orderStatus = helper.doGetText(NykaaHelpPageLocator.orderStatusText);
-            String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfHelp, 4, 0);
-            Assert.assertTrue(orderStatus.contains(expected));
+            
+            Assert.assertTrue(orderStatus.contains(value));
             test.log(Status.PASS, "Verified the text Order status");
             LoggerHandler.info("Verified the text Order status");
         } catch (Exception e) {
@@ -194,11 +190,10 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void
      */
-    public void verifyCanIReturn() {
+    public void verifyCanIReturn(String value) {
         try {
             String canIReturn = helper.doGetText(NykaaHelpPageLocator.canIReturn);
-            String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfHelp, 5, 0);
-            Assert.assertTrue(canIReturn.contains(expected));
+            Assert.assertTrue(canIReturn.contains(value));
             test.log(Status.PASS, "Verified the text Can I return a part of my order");
             LoggerHandler.info("Verified the text Can I return a part of my order");
         } catch (Exception e) {
@@ -255,11 +250,10 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void
      */
-    public void verifyCancelPolicy() {
+    public void verifyCancelPolicy(String value) {
         try {
             String cancellationPolicy = helper.doGetText(NykaaHelpPageLocator.cancelPolicyText);
-            String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfHelp, 6, 0);
-            Assert.assertTrue(cancellationPolicy.contains(expected));
+            Assert.assertTrue(cancellationPolicy.contains(value));
             test.log(Status.PASS, "Verified the text Cancellation Policy");
             LoggerHandler.info("Verified the text Cancellation Policy");
         } catch (Exception e) {
@@ -300,11 +294,10 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void
      */
-    public void verifyCancelPolicyLink() {
+    public void verifyCancelPolicyLink(String value) {
         try {
             String link = Base.driver.getCurrentUrl();
-            String expected=ExcelReader.readdata(System.getProperty(userDirectory) + testdataFolder, sheetOfHelp, 7, 0);
-            Assert.assertEquals(link, expected);
+            Assert.assertEquals(link, value);
             test.log(Status.PASS, "Verified the text Cancellation Policy url");
             LoggerHandler.info("Verified the text Cancellation Policy url");
         } catch (Exception e) {
@@ -321,22 +314,22 @@ public class NykaaHelpPage {
      * d. Parameters: None
      * e. Return Type: void
      */
-    public void testHelpPage() {
+    public void testHelpPage(String value) {
         try {
             clickOnHelp();
             clickOnOrderRelated();
-            verifyOrderRelatedText();
+            verifyOrderRelatedText(value);
             clickOnOrderStatus();
-            verifyOrderStatustext();
+            verifyOrderStatustext(value);
             navigateBackToOrderRelated();
             clickOnRefund();
-            verifyCanIReturn();
+            verifyCanIReturn(value);
             navigateBackToOrderRelated();
             clickOnCanceellationAndRefunds();
             clickOnCancelPolicy();
-            verifyCancelPolicy();
+            verifyCancelPolicy(value);
             clickOncancellationLink();
-            verifyCancelPolicyLink();
+            verifyCancelPolicyLink(value);
         } catch (Exception e) {
             LoggerHandler.error(e.getMessage());
         }

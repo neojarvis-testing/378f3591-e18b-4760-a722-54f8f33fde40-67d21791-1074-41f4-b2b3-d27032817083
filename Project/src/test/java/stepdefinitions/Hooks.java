@@ -14,6 +14,7 @@ import utils.Report;
 public class Hooks extends Base{
     static ExtentReports reports;
 
+
     /**
      * A. Method Name: report
      * B. Author Name: Group 7
@@ -22,10 +23,12 @@ public class Hooks extends Base{
      * E. Return Type: void
      */
 
+
     @BeforeAll
     public static void report(){
         reports = Report.generateExtenteReports("NYKAA_Report");
     }
+
 
     /**
      * A. Method Name: open
@@ -34,6 +37,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
 
     @Before
     public void open(){
@@ -48,10 +52,12 @@ public class Hooks extends Base{
      * E. Return Type: void
      */
 
+
     @After
     public void close(){
         driver.quit();
     }
+
 
     /**
      * A. Method Name: generateReport
@@ -60,6 +66,7 @@ public class Hooks extends Base{
      * D. Parameters: None
      * E. Return Type: void
      */
+
 
     @AfterAll
     public static void generateReport(){

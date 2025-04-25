@@ -7,7 +7,6 @@ import com.aventstack.extentreports.Status;
 
 import uistore.NykaaLuxePageLocators;
 import utils.Base;
-import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Screenshot;
 import utils.WebDriverHelper;
@@ -21,19 +20,19 @@ public class NykaaLuxeHomePage {
    } 
     /*
 	 * a.Method Name: scrollToFotter
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method scrolls the page to the footer section .
 	 * d.Parameter:None
 	 * e.Return type:void
 	 */
-   public void scrollToFotter(){
+   public void scrollToFooter(){
     Base.driver.navigate().refresh();
     helper.doScrollBypixel(0,10000);
     helper.doScrollBypixel(0,10000);
    }
     /*
 	 * a.Method Name:clickOnLuxe
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element luxe and clicks on it .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -51,7 +50,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:verifyLuxe
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element luxe and verifies the text Luxe .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -70,7 +69,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnSortByPopularity
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Popularity and clicks on popularity .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -88,7 +87,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnCustomerToprated
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das 
 	 * c.Description: The method finds the element Customer Toprated and clicks on Customer Toprated .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -107,7 +106,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnGender
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Gender and clicks on Gender .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -127,7 +126,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnUnisex
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Unisex and clicks on Unisex .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -145,7 +144,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:verifyUnisex
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Unisex and verifies the text Unisex .
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -163,7 +162,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnOccasion
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Occasion and clicks on Occasion.
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -182,7 +181,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnDaywear
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element Daywear and clicks on Day wear.
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -201,7 +200,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnFirstProduct
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description:The method clicks on firstProduct under all products.
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -221,17 +220,17 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name: scrollToFotterAgain
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method scrolls the page to the footer section .
 	 * d.Parameter:None
 	 * e.Return type:void
 	 */
-   public void scrollToFotterAgain(){
+   public void scrollToFooterAgain(){
     helper.doJsScrollFooter();
    }
     /*
 	 * a.Method Name:clickOnNykaaMan
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description:The method finds the element Nykaaman and clicks on Nykaa man.
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -250,7 +249,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:clickOnGroomingAdvice
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description:The method finds the element GroomingAdvice and clicks on GrommingAdvice.
 	 * d.Parameter:None
 	 * e.Return type:void
@@ -269,7 +268,7 @@ public class NykaaLuxeHomePage {
    }
     /*
 	 * a.Method Name:verifyShaving
-	 * b.Author Name:Vamshi 
+	 * b.Author Name: Tanu Shree Das
 	 * c.Description: The method finds the element SHAVING & BEARD CARE and verifies the text SHAVING & BEARD CARE .
 	 * d.Parameter:None
 	 * e.Return type:void

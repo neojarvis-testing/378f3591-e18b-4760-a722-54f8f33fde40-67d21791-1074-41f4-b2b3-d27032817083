@@ -305,34 +305,4 @@ public class NykaaHelpPage {
             LoggerHandler.info("Failed to Verify the text Cancellation Policy url");
         }
     }
-
-    /**
-     * a. Method Name: testHelpPage
-     * b. Author: Likitha
-     * c. Description: This method executes a sequence of actions to verify multiple functionalities on the Nykaa help page.
-     *                  It clicks on various elements, verifies texts, navigates back when needed, and tests the cancellation policy link.
-     * d. Parameters: None
-     * e. Return Type: void
-     */
-    public void testHelpPage(String value) {
-        try {
-            clickOnHelp();
-            clickOnOrderRelated();
-            verifyOrderRelatedText(value);
-            clickOnOrderStatus();
-            verifyOrderStatustext(value);
-            navigateBackToOrderRelated();
-            clickOnRefund();
-            verifyCanIReturn(value);
-            navigateBackToOrderRelated();
-            clickOnCanceellationAndRefunds();
-            clickOnCancelPolicy();
-            verifyCancelPolicy(value);
-            clickOncancellationLink();
-            verifyCancelPolicyLink(value);
-        } catch (Exception e) {
-            LoggerHandler.error(e.getMessage());
-        }
-
-    }
 }

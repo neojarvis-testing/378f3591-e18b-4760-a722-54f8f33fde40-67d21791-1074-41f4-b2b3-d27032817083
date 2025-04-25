@@ -10,6 +10,6 @@ Feature: Nykaa Man Page Functionalities
     And clicks on the first product
     And enters the pincode "600001"
     And clicks on the check button
-    And verifies the text "Chennai"
+    And verifies the text chennai "Chennai"
     And scrolls to the Write a Review section and clicks on it
     Then verifies the "Sign In" text

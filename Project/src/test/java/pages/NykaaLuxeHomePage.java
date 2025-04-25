@@ -277,6 +277,7 @@ public class NykaaLuxeHomePage {
         try {
             helper.doClick(NykaaLuxePageLocators.shaving);
             String shaving=helper.doGetText(NykaaLuxePageLocators.shavingandbeard);
+            System.out.println(shaving);
             Assert.assertTrue(shaving.contains(data));
             Screenshot.captureFullScreenshot("Shaving and beard");
             test.log(Status.INFO,"Verified the text Shaving");

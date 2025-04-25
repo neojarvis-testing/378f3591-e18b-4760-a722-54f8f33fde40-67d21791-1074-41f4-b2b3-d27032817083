@@ -14,4 +14,4 @@ Feature: Nykaa Luxe Home Page Functionalities
     And I scroll to the footer again
     And I click on Nykaa Man
     And I click on Grooming Advice
-    Then I verifies elements text Shaving "Shaving and Beard"
+    Then I verifies elements text Shaving "SHAVING & BEARD CARE"

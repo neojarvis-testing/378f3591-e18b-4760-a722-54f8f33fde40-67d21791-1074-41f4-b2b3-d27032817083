@@ -1,7 +1,7 @@
 
 Feature: Nykaa Kurtas Page Functionalities
 
-  Scenario: Execute All Functionalities
+  Scenario Outline: Execute All Functionalities
     Given I am on the Kurtas Page
     When I click on the search bar
     And I input  in the search bar "Kurtas"

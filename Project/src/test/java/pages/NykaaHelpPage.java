@@ -37,6 +37,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Click on Help on Navigation bar");
             LoggerHandler.error("Failed to Click on Help on Navigation bar");
+            Screenshot.captureFullScreenshot("Failed to Click on Help on Navigation bar");
         }
     }
 
@@ -57,6 +58,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to verify  Help page title");
             LoggerHandler.error("Failed to verify  Help page title");
+            Screenshot.captureFullScreenshot("Failed to verify  Help page title");
         }
     }
 
@@ -77,6 +79,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on order related.");
             LoggerHandler.error("Failed to click on order related.");
+            Screenshot.captureFullScreenshot("Failed to click on order related.");
         }
     }
 
@@ -97,6 +100,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Verify the text Order Related");
             LoggerHandler.error("Failed to Verify the text Order Related");
+            Screenshot.captureFullScreenshot("Failed to Verify the text Order Related");
         }
     }
 
@@ -117,6 +121,8 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on order status");
             LoggerHandler.error("Failed to click on order status");
+            Screenshot.captureFullScreenshot("Failed to click on order status");
+
         }
     }
 
@@ -139,6 +145,8 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Verify the text Order status");
             LoggerHandler.error("Failed to Verify the text Order status");
+            Screenshot.captureFullScreenshot("Failed to Verify the text Order status");
+
         }
     }
 
@@ -159,6 +167,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to navigate back to Order Related page");
             LoggerHandler.error("Failed to navigate back to Order Related page");
+            Screenshot.captureFullScreenshot("Failed to navigate back to Order Related page");
         }
     }
 
@@ -179,6 +188,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on Return and Refund");
             LoggerHandler.error("Failed to click on Return and Refund");
+            Screenshot.captureFullScreenshot("Failed to click on Return and Refund");
         }
     }
 
@@ -199,6 +209,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Verify the text Can I return a part of my order");
             LoggerHandler.error("Failed to Verify the text Can I return a part of my order");
+            Screenshot.captureFullScreenshot("Failed to Verify the text Can I return a part of my order");
         }
     }
 
@@ -219,6 +230,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on canceelation and refunds.");
             LoggerHandler.error("Failed to click on canceelation and refunds.");
+            Screenshot.captureFullScreenshot("Failed to click on canceelation and refunds.");
         }
     }
 
@@ -239,6 +251,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on canceelation policy.");
             LoggerHandler.error("Failed to click on canceelation policy.");
+            Screenshot.captureFullScreenshot("Failed to click on canceelation policy.");
         }
     }
 
@@ -259,6 +272,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Verify the text Cancellation Policy");
             LoggerHandler.info("Failed to Verify the text Cancellation Policy");
+            Screenshot.captureFullScreenshot("Failed to Verify the text Cancellation Policy");
         }
     }
 
@@ -283,6 +297,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on cancellation link.");
             LoggerHandler.info("Failed to click on cancellation link.");
+            Screenshot.captureFullScreenshot("Failed to click on cancellation link.");
         }
     }
 
@@ -303,6 +318,7 @@ public class NykaaHelpPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to Verify the text Cancellation Policy url");
             LoggerHandler.info("Failed to Verify the text Cancellation Policy url");
+            Screenshot.captureFullScreenshot("Failed to Verify the text Cancellation Policy url");
         }
     }
 }

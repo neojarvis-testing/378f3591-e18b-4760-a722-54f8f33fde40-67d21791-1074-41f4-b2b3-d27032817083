@@ -1,5 +1,5 @@
 Feature:Nykaa Toner Page Operations
-Scenario:Perform all actions on the Nykaa Toner Page
+Scenario Outline:Perform all actions on the Nykaa Toner Page
   Given I enter "TONER" in the search bar
   When I press the Enter key
   And I click on Sort By

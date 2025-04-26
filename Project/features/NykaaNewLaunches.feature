@@ -1,6 +1,6 @@
 Feature: Nykaa New Launches Page Functionalities
 
-  Scenario: Execute All Functionalities
+  Scenario Outline: Execute All Functionalities
     Given I am on the New Launches Page
     When I scroll down to the footer of the page
     And I click on the New Launches element

@@ -1,6 +1,6 @@
 Feature: Nykaa Luxe Home Page Functionalities
 
-  Scenario: Execute Nykaa Luxe Page Workflow
+  Scenario Outline: Execute Nykaa Luxe Page Workflow
     Given I scroll to Nykaa Luxe Footer Section
     When I click on Luxe 
     And I verify the text Luxe "Luxe"

@@ -1,5 +1,5 @@
 Feature:Nykaa Help Page Operations
-Scenario: Perform all actions on Nykaa Help Page
+Scenario Outline: Perform all actions on Nykaa Help Page
   Given I have navigated to the Help page
     When I click on Order Related
     And I verify the text "Order Related"

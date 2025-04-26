@@ -1,6 +1,6 @@
 Feature: Nykaa Get App Page Operations
 
-  Scenario: Perform all actions on Nykaa Get App Page
+  Scenario Outline: Perform all actions on Nykaa Get App Page
       Given I click on Get App and switch to the corresponding tab
       When I verify the Beauty to go "Beauty to go" heading
       And I enter a valid mobile number in the input field "9123456789"

@@ -33,6 +33,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.PASS,"Failed to enter liquid lipstick in search bar");
             LoggerHandler.info("Failed to enter liquid lipstick in search bar");
+            Screenshot.captureFullScreenshot("Failed to enter liquid lipstick in search bar");
         }
     }
     /*
@@ -51,6 +52,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to perform enter action");
             LoggerHandler.info("Failed to perform enter action");
+            Screenshot.captureFullScreenshot("Failed to perform enter action");
         }
     }
     /*
@@ -70,6 +72,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to hover on first product");
             LoggerHandler.info("Failed to hover on first product");
+            Screenshot.captureFullScreenshot("Failed to hover on first product");
         }
     }
     /*
@@ -88,6 +91,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on priview shades.");
             LoggerHandler.info("Failed to click on priview shades.");
+            Screenshot.captureFullScreenshot("Failed to click on priview shades.");
         }
     }
 
@@ -100,6 +104,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to verify Select A Shade");
             LoggerHandler.info("Failed to verify Select A Shade");
+            Screenshot.captureFullScreenshot("Failed to verify Select A Shade");
         }
     }
     /*
@@ -118,6 +123,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on view details.");
             LoggerHandler.info("Failed to click on view details.");
+            Screenshot.captureFullScreenshot("Failed to click on view details.");
 
         }
     }
@@ -136,7 +142,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on down arrow.");
             LoggerHandler.info("Failed to click on down arrow.");
-            
+            Screenshot.captureFullScreenshot("Failed to click on down arrow.");     
         }
     }
     /*
@@ -156,6 +162,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to select third option from dropdown of shades.");
             LoggerHandler.info("Failed to select third option from dropdown of shades.");
+            Screenshot.captureFullScreenshot("Failed to select third option from dropdown of shades.");
         }
     }
     /*
@@ -174,6 +181,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to scroll to footer.");
             LoggerHandler.info("Failed to scroll to footer.");
+            Screenshot.captureFullScreenshot("Failed to scroll to footer.");
         }
     }
     /*
@@ -193,6 +201,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on contact us.");
             LoggerHandler.info("Failed to click on contact us.");
+            Screenshot.captureFullScreenshot("Failed to click on contact us.");
         }
     }
     /*
@@ -212,6 +221,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to verify text Browse Topics");
             LoggerHandler.error("Failed to verify Browse Topics text");
+            Screenshot.captureFullScreenshot("Failed to verify Browse Topics text");
         }
     }
     /*
@@ -230,6 +240,7 @@ public class NykaaSearchLipstickPage {
         }catch(Exception e){
             test.log(Status.FAIL,"Failed to click on nykaa account.");
             LoggerHandler.info("Failed to click on nykaa account.");
+            Screenshot.captureFullScreenshot("Failed to click on nykaa account.");
         }
     }
     /*
@@ -250,6 +261,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on My wishlist.");
             LoggerHandler.info("Failed to click on My wishlist.");
+            Screenshot.captureFullScreenshot("Failed to click on My wishlist.");
         }
     }
     /*
@@ -268,6 +280,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to click on How do I add items to my wishlist.");
             LoggerHandler.info("Failed to click on How do I add items to my wishlist.");
+            Screenshot.captureFullScreenshot("Failed to click on How do I add items to my wishlist.");
         }
     }
     /*
@@ -288,6 +301,7 @@ public class NykaaSearchLipstickPage {
         } catch (Exception e) {
             test.log(Status.FAIL,"Failed to verify was this helpful?.");
             LoggerHandler.info("Failed to verify was this helpful?.");
+            Screenshot.captureFullScreenshot("Failed to verify was this helpful?.");
         }
     }
 

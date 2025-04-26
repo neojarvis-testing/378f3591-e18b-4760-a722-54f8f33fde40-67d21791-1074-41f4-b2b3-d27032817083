@@ -38,6 +38,7 @@ public class NykaaGetAppPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to click and switch to get app tab");
         }
     }
 
@@ -58,6 +59,7 @@ public class NykaaGetAppPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to verify 'Beauty to go'");
         }
     }
 
@@ -80,6 +82,7 @@ public class NykaaGetAppPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to entetr mobile number");
         }
     }
 
@@ -101,6 +104,7 @@ public class NykaaGetAppPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to click on terms and conditions");
         }
     }
 
@@ -121,6 +125,7 @@ public class NykaaGetAppPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to verify 'Terms & Conditions'");
         }
     }
 
@@ -140,6 +145,7 @@ public class NykaaGetAppPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to click on shipping policy");
         }
     }
 
@@ -160,6 +166,7 @@ public class NykaaGetAppPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to verify 'How does the delivery process work?'");
         }
     }
 
@@ -179,6 +186,7 @@ public class NykaaGetAppPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Clicked Privacy Policy");
         }
     }
 
@@ -201,6 +209,7 @@ public class NykaaGetAppPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to verify Privacy Policy");
             try {
                 Thread.sleep(4000);
             } catch (InterruptedException e1) {
@@ -231,6 +240,7 @@ public class NykaaGetAppPage {
                 LoggerHandler.info("Clicked and switched tab to Offer Zone");
             } catch (Exception e) {
                 LoggerHandler.error(e.getMessage());
+                Screenshot.captureFullScreenshot("Unable to click on offer zone");
             }
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
@@ -256,6 +266,7 @@ public class NykaaGetAppPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to verify URL");
         }
     }
 }

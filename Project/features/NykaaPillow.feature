@@ -1,7 +1,7 @@
 
 Feature: Nykaa Pillow Page Functionalities
 
-  Scenario: Execute All Functionalities
+  Scenario Outline: Execute All Functionalities
     Given I am on the Pillow Page
     When I click on the search bar fo pillow page
     And I input "Pillow" in the search bar

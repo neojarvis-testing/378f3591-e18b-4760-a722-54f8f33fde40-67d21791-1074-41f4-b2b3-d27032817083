@@ -1,6 +1,6 @@
 Feature: Nykaa Man Page Functionalities
 
-  Scenario: Execute Nykaa Man Page Workflow
+  Scenario Outline: Execute Nykaa Man Page Workflow
     Given I clicks on Nykaa Man
     When I hover on Health and Nutrition
     And I clicks on Whey Protein and switches to a new window

@@ -1,6 +1,6 @@
 Feature: Nykaa Categories Page Functionalities
 
-  Scenario: Execute All Functionalities
+  Scenario Outline: Execute All Functionalities
     Given I verify that I'm in "Categories" Page
     When I clicks on search bar, sends data "Kajal"
     And I verify the text containing "Kajal"

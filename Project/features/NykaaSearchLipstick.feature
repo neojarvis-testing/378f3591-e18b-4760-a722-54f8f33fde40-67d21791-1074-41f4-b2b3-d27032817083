@@ -1,6 +1,6 @@
 Feature: Nykaa Search Lipstick Page Operations
 
-  Scenario: Perform all actions on the Nykaa Search Lipstick Page
+  Scenario Outline: Perform all actions on the Nykaa Search Lipstick Page
     Given I enter liquid lipstick in the search bar "Liquid Lipstick"
     When I press the Enter key to search for liquid lipstick
       And I hover over the first product

@@ -38,6 +38,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Searchbar not clicked");
             LoggerHandler.error("Searchbar not clicked");
+            Screenshot.captureFullScreenshot("Clicked Search Bar");
         }
     }
 
@@ -56,6 +57,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Value not entered");
             LoggerHandler.error("Value not entered");
+            Screenshot.captureFullScreenshot("Kurtas failed to enter");
         }
     }
 
@@ -73,7 +75,8 @@ public class NykaaKurtasPage {
             LoggerHandler.info("Enter action performed");
         } catch (Exception e) {
             test.log(Status.FAIL, "Enter action not performed");
-            LoggerHandler.error("Enter action not performed");        
+            LoggerHandler.error("Enter action not performed");
+            Screenshot.captureFullScreenshot("Enter action not performed");        
         }
     }
     
@@ -93,6 +96,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Kurta not verified");
             LoggerHandler.error("Kurta not verified");
+            Screenshot.captureFullScreenshot("Kurta text not verified");
         }
     }
 
@@ -111,6 +115,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not hovered on sort");
             LoggerHandler.error("Not hovered on sort");
+            Screenshot.captureFullScreenshot("Not hovered on sort");
         }
     }
 
@@ -131,6 +136,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "BestSeller is not clicked");
             LoggerHandler.error("BestSeller is not clicked");
+            Screenshot.captureFullScreenshot("BestSeller is not clicked");
         }
     }
 
@@ -152,6 +158,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on second product");
             LoggerHandler.error("Not clicked on second product");
+            Screenshot.captureFullScreenshot("Not clicked on second product");
         }
     }
 
@@ -170,6 +177,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on size guide");
             LoggerHandler.error("Not clicked on size guide");
+            Screenshot.captureFullScreenshot("Not clicked on size guide");
         }
     }
 
@@ -189,6 +197,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Verification of size guide is not done");
             LoggerHandler.error("Verification of size guide is not done");
+            Screenshot.captureFullScreenshot("Verification of size guide is not done");
         }
     }
 
@@ -207,6 +216,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on cross bar");
             LoggerHandler.error("Not clicked on cross bar");
+            Screenshot.captureFullScreenshot("Not clicked on cross bar");
         }
     }
 
@@ -229,6 +239,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on read all");
             LoggerHandler.error("Not clicked on read all");
+            Screenshot.captureFullScreenshot("Not clicked on read all");
         }
     }
 
@@ -248,6 +259,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Verification of all reviews is not done");
             LoggerHandler.error("Verification of all reviews is not done");
+            Screenshot.captureFullScreenshot("Verification of all reviews is not done");
         }
     }
 
@@ -268,6 +280,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on helpful");
             LoggerHandler.error("Not clicked on helpful");
+            Screenshot.captureFullScreenshot("Not clicked on helpful");
         }
     }
 
@@ -286,6 +299,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to click on input field");
             LoggerHandler.error("Unable to click on input field");
+            Screenshot.captureFullScreenshot("Unable to click on input field");
         }
     }
 
@@ -304,6 +318,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "number not entered");
             LoggerHandler.error("number not entered");
+            Screenshot.captureFullScreenshot("number not entered");
         }
     }
 
@@ -323,6 +338,7 @@ public class NykaaKurtasPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "not clicked on submit Button");
             LoggerHandler.error("not clicked on submit Button");
+            Screenshot.captureFullScreenshot("not clicked on submit Button");
         }
     }   
 }

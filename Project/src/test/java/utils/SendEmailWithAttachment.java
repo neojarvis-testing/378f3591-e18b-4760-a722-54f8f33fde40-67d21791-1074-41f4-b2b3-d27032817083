@@ -41,7 +41,7 @@ public class SendEmailWithAttachment {
 	 */
 	public static void sendEmailWithAttachment(String toEmail, String fromEmail, String subject,
 			String body) throws IOException {
-		String propertiesPath = System.getProperty("user.dir") + "/config/config.properties";
+		String propertiesPath = System.getProperty("user.dir") + "/config/browser.properties";
 		try {
 			configfile = new FileInputStream(propertiesPath);
 		} catch (FileNotFoundException e) {

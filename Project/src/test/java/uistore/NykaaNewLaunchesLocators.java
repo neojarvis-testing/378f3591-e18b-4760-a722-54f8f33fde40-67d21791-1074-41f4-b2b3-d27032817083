@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 
 public class NykaaNewLaunchesLocators {
     private NykaaNewLaunchesLocators(){}
-    public static final By newLaunches = By.cssSelector("a[href='/shop-new-launches/c/53665?utm_source=Desktop_web_footer']");
+    // public static final By newLaunches = By.cssSelector("a[href='/shop-new-launches/c/53665?utm_source=Desktop_web_footer']");
+    public static final By newLaunches = By.xpath("//a[@class='css-184rvtn' and text()='New Launches']");
     public static final By shopNewLaunches = By.cssSelector("h1[class='css-c0pzm0']");
     public static final By natural = By.xpath("//a[text()='Natural']");
     public static final By faceWash = By.cssSelector("a[href='/natural/skin/face-wash/c/9566?root=nav_3&dir=desc&order=popularity']");

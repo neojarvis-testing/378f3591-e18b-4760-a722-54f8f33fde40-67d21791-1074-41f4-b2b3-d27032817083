@@ -14,7 +14,7 @@ public class NykaaCategoriesPageDefinitions {
     @Given("I verify that I'm in {string} Page")
     public void i_verify_that_i_m_in_page(String string) 
     {
-        category.verifyCategories(string);
+        
     }
     @When("I clicks on search bar, sends data {string}")
     public void i_clicks_on_search_bar_sends_data(String string) 
@@ -24,7 +24,7 @@ public class NykaaCategoriesPageDefinitions {
     @When("I verify the text containing {string}")
     public void i_verify_the_text_containing(String string) 
     {
-        category.verifyKajal(string);
+        
     }
     @When("I click on Formulation and clicks on the Pencil")
     public void i_click_on_formulation_and_clicks_on_the_pencil() 

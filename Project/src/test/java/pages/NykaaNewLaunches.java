@@ -44,6 +44,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to scroll");
             LoggerHandler.error("Unable to scroll");
+            Screenshot.captureFullScreenshot("Unable to scroll");
         } 
     }
     /*
@@ -62,6 +63,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to click");
             LoggerHandler.error("Unable to click");
+            Screenshot.captureFullScreenshot("Unable to click new launches");
         } 
     }
     /*
@@ -81,6 +83,7 @@ public class NykaaNewLaunches {
         }catch (Exception e) {
             test.log(Status.FAIL, "New launches not verified");
             LoggerHandler.error("New launches not verified");
+            Screenshot.captureFullScreenshot("New launches not verified");
         }
     }
     /*
@@ -98,7 +101,8 @@ public class NykaaNewLaunches {
             LoggerHandler.info("Hovered on natural");
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to hover on natural");
-            LoggerHandler.error("Unable to hover on natural");       
+            LoggerHandler.error("Unable to hover on natural"); 
+            Screenshot.captureFullScreenshot("Unable to hover on natural");      
         } 
     }
     /*
@@ -118,7 +122,8 @@ public class NykaaNewLaunches {
             LoggerHandler.info("clicked on facewash");
         } catch (Exception e) {
             test.log(Status.FAIL, "Facewash not clicked");
-            LoggerHandler.error("Facewash not clicked");        
+            LoggerHandler.error("Facewash not clicked");     
+            Screenshot.captureFullScreenshot("Facewash not clicked");   
         } 
     }
     /*
@@ -139,6 +144,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Facewash not verified");
             LoggerHandler.error("Facewash not verified");
+            Screenshot.captureFullScreenshot("Facewash not verified");
         }
     }
     /*
@@ -157,6 +163,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Prices not clicked");
             LoggerHandler.error("Prices not clicked");
+            Screenshot.captureFullScreenshot("Prices not clicked");
         } 
     }
     /*
@@ -178,6 +185,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Price range not selected");
             LoggerHandler.error("Price range not selected");
+            Screenshot.captureFullScreenshot("Price range not selected");
         } 
     }
     /*
@@ -196,6 +204,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "First product not clicked");
             LoggerHandler.error("First product not clicked");
+            Screenshot.captureFullScreenshot("First product not clicked");
         } 
     }
     /*
@@ -214,6 +223,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to click on pincode");
             LoggerHandler.error("Unable to click on pincode");
+            Screenshot.captureFullScreenshot("Unable to click on pincode");
         } 
     }
     /*
@@ -232,6 +242,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
            test.log(Status.FAIL, "Unable to input pincode");
            LoggerHandler.error("Unable to input pincode");
+           Screenshot.captureFullScreenshot("Unable to input pincode");
         } 
     }
     /*
@@ -250,6 +261,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not able to click on check");
             LoggerHandler.error("Not able to click on check");
+            Screenshot.captureFullScreenshot("Not able to click on check");
         } 
     }
     /*
@@ -268,6 +280,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on add to bag");
             LoggerHandler.error("Not clicked on add to bag");
+            Screenshot.captureFullScreenshot("Not clicked on add to bag");
         } 
     }
      /*
@@ -286,6 +299,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on cart");
             LoggerHandler.error("Not clicked on cart");
+            Screenshot.captureFullScreenshot("Not clicked on cart");
         }
     }
     /*
@@ -308,6 +322,7 @@ public class NykaaNewLaunches {
         } catch (Exception e) {
             test.log(Status.FAIL, "Text bag not verified");
             LoggerHandler.error("Text bag not verified");
+            Screenshot.captureFullScreenshot("Text bag not verified");
         }
     }
     

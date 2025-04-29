@@ -40,6 +40,7 @@ public class NykaaManPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to scroll down to footer");
         }
     }
 
@@ -60,6 +61,7 @@ public class NykaaManPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to hover on health and nutrition.");
         }
     }
 
@@ -79,6 +81,7 @@ public class NykaaManPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not able to switch to new window");
         }
     }
 
@@ -99,6 +102,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("'Whey Protein' not verified");
         }
     }
 
@@ -119,6 +123,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot(" '3 pagination' not verified");
         }
     }
 
@@ -138,6 +143,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot(" '2 pagination' not clicked");
         }
     }
 
@@ -157,6 +163,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not clicked on first product");
         }
     }
 
@@ -177,6 +184,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Pincode not entered");
         }
     }
 
@@ -196,6 +204,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not clicked on check button");
         }
     }
 
@@ -217,6 +226,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Chennai Text not verified");
         }
     }
 
@@ -236,6 +246,7 @@ public class NykaaManPage {
         } catch (AssertionError | Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not clicked on write review");
         }
     }
 
@@ -259,6 +270,7 @@ public class NykaaManPage {
         } catch (AssertionError e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Sign In Text not verified");
         }
     }
 }

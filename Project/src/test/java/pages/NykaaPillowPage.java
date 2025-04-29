@@ -13,6 +13,7 @@ import utils.ExcelReader;
 import utils.LoggerHandler;
 import utils.Report;
 import utils.Screenshot;
+import utils.SendEmailWithAttachment;
 import utils.WebDriverHelper;
 
 public class NykaaPillowPage {
@@ -42,6 +43,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on search bar");
             LoggerHandler.error("Not clicked on search bar");
+            Screenshot.captureFullScreenshot("Not clicked on search bar");
         }
     }
 
@@ -61,6 +63,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Unable to input pillow");
             LoggerHandler.error("Unable to input pillow");
+            Screenshot.captureFullScreenshot("Unable to input pillow");
         }
     }
 
@@ -80,6 +83,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Hit action not performed");
             LoggerHandler.error("Hit action not performed");
+            Screenshot.captureFullScreenshot("Hit action not performed");
         }
     }
 
@@ -100,6 +104,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Text pillow not verified");
             LoggerHandler.error("Text pillow not verified");
+            Screenshot.captureFullScreenshot("Text pillow not verified");
         }
     }
 
@@ -119,6 +124,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on price");
             LoggerHandler.error("Not clicked on price");
+            Screenshot.captureFullScreenshot("Not clicked on price");
         }
     }
 
@@ -138,6 +144,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on price range");
             LoggerHandler.error("Not clicked on price range");
+            Screenshot.captureFullScreenshot("Not clicked on price range");
         }
     }
 
@@ -157,6 +164,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on discount");
             LoggerHandler.error("Not clicked on discount");
+            Screenshot.captureFullScreenshot("Not clicked on discount");
         }
     }
 
@@ -176,6 +184,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on discount range");
             LoggerHandler.error("Not clicked on discount range");
+            Screenshot.captureFullScreenshot("Not clicked on discount range");
         }
     }
 
@@ -195,6 +204,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on average customer rating");
             LoggerHandler.error("Not clicked on average customer rating");
+            Screenshot.captureFullScreenshot("Not clicked on average customer rating");
         }
     }
 
@@ -214,6 +224,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on average options");
             LoggerHandler.error("Not clicked on average options");
+            Screenshot.captureFullScreenshot("Not clicked on average options");
         }
     }
 
@@ -234,6 +245,7 @@ public class NykaaPillowPage {
         }catch (Exception e) {
             test.log(Status.FAIL, "Filter text not verified");
             LoggerHandler.error("Filter text not verified");
+            Screenshot.captureFullScreenshot("Filter text not verified");
         }
     }
 
@@ -253,6 +265,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Not clicked on first product");
             LoggerHandler.error("Not clicked on first product");
+            Screenshot.captureFullScreenshot("Not clicked on first product");
         }
     }
 
@@ -272,6 +285,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Add to bag not clicked");
             LoggerHandler.error("Add to bag not clicked");
+            Screenshot.captureFullScreenshot("Add to bag not clicked");
         }
     }
 
@@ -291,6 +305,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Cart not clicked");
             LoggerHandler.error("Cart not clicked");
+            Screenshot.captureFullScreenshot("Cart not clicked");
         }
     }
 
@@ -314,6 +329,7 @@ public class NykaaPillowPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Text bag not verified");
             LoggerHandler.error("Text bag not verified");
+            Screenshot.captureFullScreenshot("Text bag not verified");
         }
     }
 }

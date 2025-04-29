@@ -41,6 +41,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to enter Toner in serach Bar");
             LoggerHandler.info("Failed to enter Toner in search bar");
+            Screenshot.captureFullScreenshot("Failed to enter Toner in search bar");
         }
     }
 
@@ -63,6 +64,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to perform enter action");
             LoggerHandler.info("Failed to perform enter action");
+            Screenshot.captureFullScreenshot("Failed to perform enter action");
         }
     }
 
@@ -87,6 +89,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to verify toner text");
             LoggerHandler.info("Failed to verify toner text");
+            Screenshot.captureFullScreenshot("Failed to verify toner text");
         }
     }
 
@@ -108,6 +111,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on sortby");
             LoggerHandler.info("Failed to click on sortby");
+            Screenshot.captureFullScreenshot("Failed to click on sortby");
         }
     }
 
@@ -130,6 +134,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to select new Arrivals");
             LoggerHandler.info("Failed to select new Arrivals");
+            Screenshot.captureFullScreenshot("Failed to select new Arrivals");
         }
     }
 
@@ -155,6 +160,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on Avg Customer Rating");
             LoggerHandler.info("Failed to click on Avg Customer Rating");
+            Screenshot.captureFullScreenshot("Failed to click on Avg Customer Rating");
         }
     }
 
@@ -176,6 +182,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to select Rating");
             LoggerHandler.info("Failed to select Rating");
+            Screenshot.captureFullScreenshot("Failed to select Rating");
         }
     }
 
@@ -198,6 +205,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on First product");
             LoggerHandler.info("Failed to click on First product");
+            Screenshot.captureFullScreenshot("Failed to click on First product");
         }
     }
 
@@ -221,6 +229,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to verify inclusive of all taxes text");
             LoggerHandler.info("Failed to verify inclusive of all taxes text");
+            Screenshot.captureFullScreenshot("Failed to verify inclusive of all taxes text");
         }
     }
 
@@ -243,6 +252,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to click on add to bag");
             LoggerHandler.info("Failed to click on add to bag");
+            Screenshot.captureFullScreenshot("Failed to click on add to bag");
         }
     }
 
@@ -264,6 +274,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Failed to verify Description text");
             LoggerHandler.info("Failed to verify Description text");
+            Screenshot.captureFullScreenshot("Failed to verify Description text");
         }
     }
 
@@ -285,6 +296,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Cannot be Clicked on ingredients successfully");
             LoggerHandler.info("Cannot be Clicked on ingredients successfully");
+            Screenshot.captureFullScreenshot("Cannot be Clicked on ingredients successfully");
         }
     }
 
@@ -309,6 +321,7 @@ public class NykaaTonerPage {
         } catch (Exception e) {
             test.log(Status.FAIL, "Cannot be Clicked on ReadMore");
             LoggerHandler.info("Cannot be Clicked on ReadMore");
+            Screenshot.captureFullScreenshot("Cannot be Clicked on ReadMore");
         }
     }
 }

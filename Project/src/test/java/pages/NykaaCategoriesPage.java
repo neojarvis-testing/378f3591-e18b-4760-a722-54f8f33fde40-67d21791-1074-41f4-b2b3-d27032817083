@@ -36,6 +36,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Categories not verified");
+
         }
     }
 
@@ -57,6 +59,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Data not enetered in search bar");
+
         }
     }
 
@@ -74,6 +78,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Kajal text not verified");
+
         }
     }
 
@@ -92,6 +98,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not Clicked on pencil");
+
         }
     }
 
@@ -110,6 +118,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Unable to hover over fragrance");
+
         }
     }
 
@@ -127,6 +137,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("New Launches not clicked");
+
         }
     }
 
@@ -143,6 +155,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("First product not clicked");
+
         }
     }
 
@@ -160,6 +174,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not Clicked on add to bag");
+
         }
     }
 
@@ -178,6 +194,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Not Clicked on how to use");
+
         }
     }
 
@@ -196,6 +214,8 @@ public class NykaaCategoriesPage {
         } catch (Exception e) {
             test.log(Status.FAIL, e.getMessage());
             LoggerHandler.error(e.getMessage());
+            Screenshot.captureFullScreenshot("Customers also viewed not verified");
+
         }
     }
 }

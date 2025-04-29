@@ -26,9 +26,15 @@ public class NykaaLuxeHomePage {
 	 * e.Return type:void
 	 */
    public void scrollToFooter(){
-    Base.driver.navigate().refresh();
-    helper.doScrollBypixel(0,10000);
-    helper.doScrollBypixel(0,10000);
+    try {
+        Base.driver.navigate().refresh();
+        helper.doScrollBypixel(0,10000);
+        helper.doScrollBypixel(0,10000);
+    } catch (Exception e) {
+        Screenshot.captureFullScreenshot("Scrolled to footer");
+        // TODO: handle exception
+    }
+   
    }
     /*
 	 * a.Method Name:clickOnLuxe
@@ -46,6 +52,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Luxe");
         LoggerHandler.error("Cannot Click on Luxe");
+        Screenshot.captureFullScreenshot("Cannot Click on Luxe");
     }
    }
     /*
@@ -64,6 +71,7 @@ public class NykaaLuxeHomePage {
     } catch (AssertionError e) {
         test.log(Status.FAIL,"Cannot Verify the text  Luxe");
         LoggerHandler.error("Cannot Verifiy the text  Luxe");
+        Screenshot.captureFullScreenshot("Cannot Verifiy the text  Luxe");
       
     }
    }
@@ -83,6 +91,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on popularity");
         LoggerHandler.error("Cannot click on popularity");
+        Screenshot.captureFullScreenshot("Cannot click on popularity");
     } 
    }
     /*
@@ -102,6 +111,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot Click on Customer Top Rated");
         LoggerHandler.error("Cannot Clickon Customer Top Rated"); 
+        Screenshot.captureFullScreenshot("Cannot Clickon Customer Top Rated");
     }
    }
     /*
@@ -121,6 +131,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Gender");
         LoggerHandler.error("Cannot click on Gender");
+        Screenshot.captureFullScreenshot("Cannot click on Gender");
         
     }
    }
@@ -140,6 +151,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Unisex");
         LoggerHandler.error("Cannot click on Unisex");
+        Screenshot.captureFullScreenshot("Cannot click on Unisex");
     }
    }
     /*
@@ -158,6 +170,7 @@ public class NykaaLuxeHomePage {
     } catch (AssertionError e) {
         test.log(Status.FAIL,"Cannot Verify the text Unisex");
         LoggerHandler.error("Cannot Verify the text Unisex");
+        Screenshot.captureFullScreenshot("Cannot Verify the text Unisex");
     }
    }
     /*
@@ -177,6 +190,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Occasion");
         LoggerHandler.error("Cannot click on Occasion");
+        Screenshot.captureFullScreenshot("Cannot click on Occasion");
     }
    }
     /*
@@ -196,6 +210,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Daywear");
         LoggerHandler.error("Cannot click on Daywear");
+        Screenshot.captureFullScreenshot("Cannot click on Daywear");
     }
    }
     /*
@@ -215,6 +230,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on First Product");
         LoggerHandler.error("Cannot click on First Product");
+        Screenshot.captureFullScreenshot("Cannot click on First Product");
        
     }
    }
@@ -245,6 +261,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on NykaaMan");
         LoggerHandler.error("Cannot click on NykaaMan");
+        Screenshot.captureFullScreenshot("Cannot click on NykaaMan");
     }
    }
     /*
@@ -264,6 +281,7 @@ public class NykaaLuxeHomePage {
     } catch (Exception e) {
         test.log(Status.FAIL,"Cannot click on Gromming advice");
         LoggerHandler.error("Cannot click on Gromming advice");
+        Screenshot.captureFullScreenshot("Cannot click on Gromming advice");
     }
    }
     /*
@@ -285,6 +303,7 @@ public class NykaaLuxeHomePage {
         } catch (AssertionError e) {
             test.log(Status.FAIL,"Cannot Verified the text Shaving");
             LoggerHandler.info("Cannot Verified the text Shaving");
+            Screenshot.captureFullScreenshot("Cannot Verified the text Shaving");
         }
    } 
 }

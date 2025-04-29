@@ -1,24 +1,41 @@
 package uistore;
-
+ 
 import org.openqa.selenium.By;
-
+ 
 public class NykaaKurtasLocators {
+
     private NykaaKurtasLocators(){}
+
     public static final By verifyKurtas = By.cssSelector("h1[class='css-h8pwvr']");
-    public static final By sortBy = By.xpath("//button[@class='css-drjr1k']");
-    public static final By bestSeller = By.cssSelector("div[title='Bestseller']");
-    public static final By secondProduct = By.xpath("(//img[@class=' css-kwk7lt'])[2]");
+    // public static final By sortBy = By.xpath("//button[@class='css-drjr1k']");
+
+    public static final By sortBy = By.xpath("//div[@class='css-13h1wbc']");
+    // public static final By bestSeller = By.cssSelector("div[title='Bestseller']");
+
+    public static final By bestSeller = By.cssSelector("//div[@class='css-oqhq6v']//div[@class='css-l1qw2e']//div[@class='css-rvx26o' and @title='Bestseller']");
+    // public static final By secondProduct = By.xpath("(//div[@class='css-zzdc8z']/div)[2]");
+
+    public static final By secondProduct = By.xpath("//div[@class='css-zzdc8z']//div[@id='aria-label-13735962-1']");
     // public static final By secondProduct = By.xpath("(//div[@class='css-43krnf'])[2]");
 
     public static final By sizeGuide = By.cssSelector("button[class='css-roouj2']");
+
     public static final By verifySizeGuide = By.cssSelector("div[class='title css-9qof20']");
+
     public static final By crossMark = By.xpath("(//div[@class='css-1sg2lsz'])[3]");
-    public static final By readAllReviews = By.xpath("(//a[@class='css-pv2moq'])");
-    public static final By realAllreviews = By.cssSelector("a[href='/vastramyaa-women-mustard-floral-cotton-kurta/p/13735962?all-reviews=1']");
+    // public static final By readAllReviews = By.xpath("(//a[@class='css-pv2moq'])");
+
+    public static final By readAllReviews = By.xpath("//a[@class='css-pv2moq']//span");
+
     public static final By allReviews = By.cssSelector("div[class='css-1ec8tb0']");
     // public static final By helpful = By.xpath("(//div[@class='css-1r0hxci'])[2]");
-    public static final By helpful = By.xpath("(//span[@class='css-1hk9p7l'])[2]");
-    public static final By numberInput = By.cssSelector("input[name='mobileInput']");
-    public static final By submit = By.cssSelector("button[type='submit']");
 
+    public static final By helpful = By.xpath("(//div//span[@class='css-1hk9p7l' and text()='Helpful'])[2]");
+
+    public static final By numberInput = By.cssSelector("input[name='mobileInput']");
+
+    public static final By submit = By.cssSelector("button[type='submit']");
+ 
 }
+
+ 

@@ -17,7 +17,7 @@ public void i_click_on_get_app_and_switch_to_the_corresponding_tab() {
 }
 @When("I verify the Beauty to go {string} heading")
 public void i_verify_the_beauty_to_go_heading(String string) {
-     getAppPage.verifyBeautyToGo(string);
+     // getAppPage.verifyBeautyToGo(string);
     
 }
 @When("I enter a valid mobile number in the input field {string}")

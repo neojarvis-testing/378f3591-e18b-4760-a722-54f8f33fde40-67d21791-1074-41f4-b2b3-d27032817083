@@ -43,55 +43,68 @@ public class Base {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-        String executionType = prop.getProperty("executiontype");
-        String browserName = prop.getProperty("browser");
+    //     String executionType = prop.getProperty("executiontype");
+    //     String browserName = prop.getProperty("browser");
 
-        if ("remote".equalsIgnoreCase(executionType)) {
-            URL gridUrl;
+    //     if ("remote".equalsIgnoreCase(executionType)) {
+    //         URL gridUrl;
+    //         try {
+    //             gridUrl = new URL(prop.getProperty("gridurl"));
+    //             driver = new RemoteWebDriver(gridUrl, new ChromeOptions());
+    //         } catch (MalformedURLException e) {
+
+    //             e.printStackTrace();
+    //         }
+
+    //     } else if ("local".equalsIgnoreCase(executionType)) {
+    //         switch (browserName.toLowerCase()) {
+    //             case "chrome":
+    //                 driver = new ChromeDriver();
+    //                 break;
+
+    //             case "edge":
+    //                 driver = new EdgeDriver();
+    //                 break;
+
+    //             case "firefox":
+    //                 driver = new FirefoxDriver();
+    //                 break;
+
+    //             default:
+    //                 System.err.println("Unsupported browser: " + browserName);
+    //                 break;
+    //         }
+    //     } else {
+    //         System.err.println("Invalid execution type: " + executionType);
+    //     }
+
+    //     if (driver != null)
+
+    //     {
+    //         driver.manage().window().maximize();
+    //         driver.get(prop.getProperty("url"));
+    //         driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+    //         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+
+    //     }
+    //     // Dont remove the listener Object
+
+    //     WebDriverListener listener = new EventHandler();
+    //     driver = new EventFiringDecorator<>(listener).decorate(driver);
+        
+           
             try {
-                gridUrl = new URL(prop.getProperty("gridurl"));
+                URL gridUrl = new URL(prop.getProperty("gridurl"));
                 driver = new RemoteWebDriver(gridUrl, new ChromeOptions());
+                driver.manage().window().maximize();
+                driver.get(prop.getProperty("url"));
+                driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+                driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
             } catch (MalformedURLException e) {
-
                 e.printStackTrace();
             }
-
-        } else if ("local".equalsIgnoreCase(executionType)) {
-            switch (browserName.toLowerCase()) {
-                case "chrome":
-                    driver = new ChromeDriver();
-                    break;
-
-                case "edge":
-                    driver = new EdgeDriver();
-                    break;
-
-                case "firefox":
-                    driver = new FirefoxDriver();
-                    break;
-
-                default:
-                    System.err.println("Unsupported browser: " + browserName);
-                    break;
-            }
-        } else {
-            System.err.println("Invalid execution type: " + executionType);
-        }
-
-        if (driver != null)
-
-        {
-            driver.manage().window().maximize();
-            driver.get(prop.getProperty("url"));
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-            driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
-        }
-        // Dont remove the listener Object
-
-        WebDriverListener listener = new EventHandler();
-        driver = new EventFiringDecorator<>(listener).decorate(driver);
-
+        
     }
+    
 
 }

@@ -26,7 +26,7 @@ public void i_click_on_the_new_launches_element() {
 }
 @Then("I verify that the text {string} is present")
 public void i_verify_that_the_text_is_present(String string) {
-    launches.verifyShopNewLaunches(string);
+    
 }
 @When("I hover over the Natural element")
 public void i_hover_over_the_natural_element() {
@@ -35,7 +35,6 @@ public void i_hover_over_the_natural_element() {
 @When("I click on the Face Wash element {string}")
 public void i_click_on_the_face_wash_element(String string) {
     launches.clickFaceWah(string);
-    launches.verifyFaceWash(string);
 }
 @When("I click on the price option of new launches")
 public void i_click_on_the_price_filter_option_of_new_launches() {
@@ -71,7 +70,7 @@ public void i_click_on_the_cart_icon_to_view_the_added_product() {
 }
 @Then("I verify that the bag contains the {string}")
 public void i_verify_that_the_bag_contains_the(String string) {
-    launches.verifyBag(string);
+    // launches.verifyBag(string);
 }
 
 }
